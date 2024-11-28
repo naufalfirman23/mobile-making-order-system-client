@@ -1,100 +1,89 @@
-# 🎯 Food Ordering Appointment System
+# 🎯 Mobile Application to use API of Order Making System
 
-This repository contains the **Admin Panel** and **API** for managing food ordering appointments with a food store. The system is designed to streamline appointment scheduling and order management, providing both administrative tools and API functionality for frontend integration.
+This repository contains the **Mobile Application** for managing food orders and appointments with a food store. It integrates with the **Admin Panel API** to allow users to place orders, track their status, and manage appointments via their mobile devices.
 
 ---
 
 ## Features
 
-### Admin Panel
-- **User-friendly Dashboard**: Manage food categories, products, and orders efficiently.
-- **Order Management**: Track and confirm orders with status updates.
-- **Reports**: Generate detailed reports for orders and appointments.
-- **Role Management**: Control access based on user roles (Admin/Staff).
+### Mobile Application
+1. **User-Friendly Interface**: Simple navigation to view and place orders.
+2. **Order Management**: View and track order statuses.
+3. **Appointment Scheduling**: Set appointments for food orders based on store availability.
+4. **Product Categories & Details**: Browse products by categories and view detailed descriptions.
+5. **Secure Authentication**: Login with JWT for secure access.
 
-### API
-- **Authentication**: Secure user login using JWT.
-- **CRUD Operations**: Handle products, categories, and orders programmatically.
-- **Order Management**: APIs for creating, updating, and viewing orders.
-- **Real-Time Features**: Appointment scheduling and order tracking.
+### API Integration
+1. **Authentication**: Secure login with JWT token for user verification.
+2. **Product Management**: Fetch product categories and product details via API.
+3. **Order Management**: Create and manage orders through API endpoints.
+4. **Real-Time Features**: Appointment scheduling and order status updates in real-time.
 
 ---
 
 ## Installation
 
 ### Requirements
-- PHP >= 8.0
-- Laravel Framework
-- MySQL Database
-- Node.js & npm (for frontend assets)
+- **Flutter SDK** >= 3.3.4
+- Android Studio or Visual Studio Code
+- Internet connection for API calls
 
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/naufalfirman23/System-Order-for-Restaurant-Admin-and-API.git
+   git clone https://github.com/naufalfirman23/mobile-making-order-system-client.git
 2. Navigate to the project directory:
     ```bash
-    cd food-ordering-system
+    cd food-ordering-system-mobile
 4. Install dependencies:
    ```bash
-    composer install
-    npm install
-    npm run dev
-5. Configure the .env file with your database and environment details.
-6. download sql file on : [Download!](https://api.whatsapp.com/send/?phone=6282265057386&text&type=phone_number&app_absent=0)   
-8. Start the server:
+    flutter pub get
+5. Configure the API base URL in the lib/const/capi.dart file.
+6. Ask the Author on : [Download!](https://api.whatsapp.com/send/?phone=6282265057386&text&type=phone_number&app_absent=0)   
+8. Run the application on an emulator or physical device:
    ```bash
-   php artisan serve
-   
-### API Endpoints
-# API Documentation
+   flutter run
 
-## Endpoints
+---
 
-| **Endpoint**                 | **Method** | **Description**                                                                                  | **Middleware**       |
-|-------------------------------|------------|--------------------------------------------------------------------------------------------------|----------------------|
-| `/register`                  | POST       | Register a new user by providing details like name, email, and password.                        | -                    |
-| `/login`                     | POST       | Log in the user to obtain an authentication token.                                              | -                    |
-| `/test`                      | GET        | A test endpoint to verify API connectivity or response.                                         | -                    |
-| `/logout`                    | POST       | Logs out the user by invalidating the authentication token.                                     | `auth:sanctum`       |
-| `/user`                      | GET        | Retrieves the details of the currently logged-in user.                                          | `auth:sanctum`       |
-| `/category`                  | GET        | Fetches a list of all product categories.                                                       | `auth:sanctum`       |
-| `/kategori/pesanan`          | GET        | Fetches all order categories.                                                                   | `auth:sanctum`       |
-| `/products-by-category`      | GET        | Fetches products filtered by a specific category.                                               | `auth:sanctum`       |
-| `/products-detail/{id}`      | GET        | Retrieves product details based on the product ID.                                              | `auth:sanctum`       |
-| `/orders/`                   | GET        | Fetches a list of all orders made by the logged-in user.                                        | `auth:sanctum`       |
-| `/orders/{id}`               | GET        | Fetches the details of a specific order by its ID.                                              | `auth:sanctum`       |
-| `/orders/`                   | POST       | Creates a new order based on product and category data.                                         | `auth:sanctum`       |
-| `/orders/terima`             | POST       | Marks a specific order as received by the user.                                                 | `auth:sanctum`       |
-| `/order-history`             | GET        | Fetches the history of all orders made by the user.                                             | `auth:sanctum`       |
+##Screenshots
+<p align="center">
+  <img src="assets/screenshoot/file1.png" width="30%" />
+  <img src="assets/screenshoot/file10.png" width="30%" />
+  <img src="assets/screenshoot/file11.png" width="30%" />
+</p>
 
-<!-- Images start here -->
-![file1.png](public/assets/screenshoot/file1.png)
+<p align="center">
+  <img src="assets/screenshoot/file12.png" width="30%" />
+  <img src="assets/screenshoot/file13.png" width="30%" />
+  <img src="assets/screenshoot/file14.png" width="30%" />
+</p>
 
-![file10.png](public/assets/screenshoot/file10.png)
+<p align="center">
+  <img src="assets/screenshoot/file15.png" width="30%" />
+  <img src="assets/screenshoot/file16.png" width="30%" />
+  <img src="assets/screenshoot/file17.png" width="30%" />
+</p>
 
-![file11.jpeg](public/assets/screenshoot/file11.jpeg)
+<p align="center">
+  <img src="assets/screenshoot/file18.png" width="30%" />
+  <img src="assets/screenshoot/file2.png" width="30%" />
+  <img src="assets/screenshoot/file3.png" width="30%" />
+</p>
 
-![file2.png](public/assets/screenshoot/file2.png)
+<p align="center">
+  <img src="assets/screenshoot/file4.png" width="30%" />
+  <img src="assets/screenshoot/file5.png" width="30%" />
+  <img src="assets/screenshoot/file6.png" width="30%" />
+</p>
 
-![file3.png](public/assets/screenshoot/file3.png)
+<p align="center">
+  <img src="assets/screenshoot/file7.png" width="30%" />
+  <img src="assets/screenshoot/file8.png" width="30%" />
+  <img src="assets/screenshoot/file9.png" width="30%" />
+</p>
 
-![file4.png](public/assets/screenshoot/file4.png)
-
-![file5.png](public/assets/screenshoot/file5.png)
-
-![file6.png](public/assets/screenshoot/file6.png)
-
-![file7.png](public/assets/screenshoot/file7.png)
-
-![file8.png](public/assets/screenshoot/file8.png)
-
-![file9.png](public/assets/screenshoot/file9.png)
-
-<!-- Sample output -->
-# Food Order Appointment System
-
-This project provides an admin system and API for managing food order appointments efficiently.
+---
 
 ## Authors
 
@@ -102,7 +91,9 @@ This project provides an admin system and API for managing food order appointmen
 |------------------|----------------------------|
 | Naufal Developer | tompelart17@gmail.com      |
 
+
+---
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
