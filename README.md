@@ -39,7 +39,7 @@ This repository contains the **Mobile Application** for managing food orders and
    ```bash
     flutter pub get
 5. Configure the API base URL in the lib/const/capi.dart file.
-6. Ask the Author on : [Download!](https://api.whatsapp.com/send/?phone=6282265057386&text&type=phone_number&app_absent=0)   
+6. Ask the Author on : [Calling Me!](https://api.whatsapp.com/send/?phone=6282265057386&text&type=phone_number&app_absent=0)   
 8. Run the application on an emulator or physical device:
    ```bash
    flutter run
